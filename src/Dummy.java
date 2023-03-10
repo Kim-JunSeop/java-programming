@@ -1,16 +1,22 @@
 public class Dummy {
-    int atr;
+    private int attr;
+    final int maxAttr = 100;
+    final int minAttr = 0;
 
-    void print(){
-        System.out.println("hello, I'm Dummy");
-
+    public int getAttr() {
+        return attr;
     }
 
-    public int getAtr() {
-        return atr;
+    public void setAttr(int attr) {
+        if (attr > maxAttr) {
+            this.attr = maxAttr;
+        } else if (attr < minAttr) {
+            this.attr = minAttr;
+        }
+        this.attr = attr;
     }
 
-    public void setAtr(int atr) {
-        this.atr = atr;
+    void print() {
+        System.out.println("Hello, I'm dummy");
     }
 }

@@ -6,8 +6,8 @@ public class HelloWorld {
         int value;
         Dummy myDummy = new Dummy();
 
-        myDummy.setAtr(123);
-        value = myDummy.getAtr();
+        myDummy.setAttr(123);
+        value = myDummy.getAttr();
         System.out.println(value);
     }
 }
